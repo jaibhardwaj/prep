@@ -1,0 +1,11 @@
+rootProject.name = 'prep'
+
+// Design Patterns modules
+include 'design-patterns:strategy'
+include 'design-patterns:factory'
+include 'design-patterns:observer'
+
+// Low-Level Design (LLD) modules
+include 'lld:parking-lot'
+include 'lld:splitwise'
+include 'lld:bookmyshow'
