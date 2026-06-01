@@ -15,30 +15,25 @@ public class WeatherData implements Subject {
 
     @Override
     public void registerObserver(Observer o) {
-        observers.add(o);
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: WeatherData.registerObserver");
     }
 
     @Override
     public void removeObserver(Observer o) {
-        observers.remove(o);
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: WeatherData.removeObserver");
     }
 
     @Override
     public void notifyObservers() {
-        for (Observer observer : observers) {
-            observer.update(temperature, humidity, pressure);
-        }
-    }
-
-    public void measurementsChanged() {
-        notifyObservers();
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: WeatherData.notifyObservers");
     }
 
     public void setMeasurements(float temperature, float humidity, float pressure) {
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.pressure = pressure;
-        measurementsChanged();
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: WeatherData.setMeasurements");
     }
 
     public float getTemperature() {

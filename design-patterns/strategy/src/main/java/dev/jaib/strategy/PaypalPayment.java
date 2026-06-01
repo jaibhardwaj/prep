@@ -11,7 +11,8 @@ public class PaypalPayment implements PaymentStrategy {
 
     @Override
     public void pay(int amount) {
-        System.out.println(amount + " paid using PayPal.");
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: PaypalPayment.pay");
     }
 
     public String getEmailId() {

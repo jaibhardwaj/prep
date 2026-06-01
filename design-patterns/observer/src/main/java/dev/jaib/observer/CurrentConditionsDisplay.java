@@ -7,13 +7,14 @@ public class CurrentConditionsDisplay implements Observer {
 
     public CurrentConditionsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
+        // Hint: Register this display with weatherData
         weatherData.registerObserver(this);
     }
 
     @Override
     public void update(float temperature, float humidity, float pressure) {
-        this.temperature = temperature;
-        this.humidity = humidity;
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: CurrentConditionsDisplay.update");
     }
 
     public float getTemperature() {

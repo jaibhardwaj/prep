@@ -3,6 +3,7 @@ package dev.jaib.factory;
 public class PdfDocument implements Document {
     @Override
     public String parse() {
-        return "Parsing PDF document content.";
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: PdfDocument.parse");
     }
 }

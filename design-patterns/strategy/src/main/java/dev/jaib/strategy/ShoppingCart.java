@@ -11,23 +11,22 @@ public class ShoppingCart {
     }
 
     public void addItem(Item item) {
-        this.items.add(item);
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: ShoppingCart.addItem");
     }
 
     public void removeItem(Item item) {
-        this.items.remove(item);
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: ShoppingCart.removeItem");
     }
 
     public int calculateTotal() {
-        int sum = 0;
-        for (Item item : items) {
-            sum += item.getPrice();
-        }
-        return sum;
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: ShoppingCart.calculateTotal");
     }
 
     public void pay(PaymentStrategy paymentMethod) {
-        int amount = calculateTotal();
-        paymentMethod.pay(amount);
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: ShoppingCart.pay");
     }
 }

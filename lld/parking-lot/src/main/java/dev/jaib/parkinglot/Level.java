@@ -27,30 +27,18 @@ public class Level {
     }
 
     public ParkingSpot findAvailableSpot(Vehicle vehicle) {
-        for (ParkingSpot spot : spots) {
-            if (spot.canFitVehicle(vehicle)) {
-                return spot;
-            }
-        }
-        return null;
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: Level.findAvailableSpot");
     }
 
     public boolean parkVehicle(Vehicle vehicle) {
-        ParkingSpot spot = findAvailableSpot(vehicle);
-        if (spot != null) {
-            return spot.park(vehicle);
-        }
-        return false;
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: Level.parkVehicle");
     }
 
     public int getFreeSpotsCount(ParkingSpotType type) {
-        int count = 0;
-        for (ParkingSpot spot : spots) {
-            if (spot.getType() == type && spot.isFree()) {
-                count++;
-            }
-        }
-        return count;
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: Level.getFreeSpotsCount");
     }
 
     public int getFloorNumber() {

@@ -14,40 +14,18 @@ public class ParkingSpot {
     }
 
     public boolean canFitVehicle(Vehicle vehicle) {
-        if (!isFree) {
-            return false;
-        }
-        switch (type) {
-            case LARGE:
-                // Large spots can fit any vehicle
-                return true;
-            case COMPACT:
-                // Compact spots can fit cars and motorcycles
-                return vehicle.getType() == VehicleType.CAR || vehicle.getType() == VehicleType.MOTORCYCLE;
-            case MOTORCYCLE:
-                // Motorcycle spots can only fit motorcycles
-                return vehicle.getType() == VehicleType.MOTORCYCLE;
-            default:
-                return false;
-        }
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: ParkingSpot.canFitVehicle");
     }
 
     public boolean park(Vehicle vehicle) {
-        if (!canFitVehicle(vehicle)) {
-            return false;
-        }
-        this.currentVehicle = vehicle;
-        this.isFree = false;
-        return true;
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: ParkingSpot.park");
     }
 
     public boolean unpark() {
-        if (isFree) {
-            return false;
-        }
-        this.currentVehicle = null;
-        this.isFree = true;
-        return true;
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: ParkingSpot.unpark");
     }
 
     public int getSpotNumber() {

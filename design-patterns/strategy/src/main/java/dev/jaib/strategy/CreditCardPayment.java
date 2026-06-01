@@ -15,10 +15,10 @@ public class CreditCardPayment implements PaymentStrategy {
 
     @Override
     public void pay(int amount) {
-        System.out.println(amount + " paid with credit/debit card.");
+        // TODO: Implement this method
+        throw new UnsupportedOperationException("Unimplemented: CreditCardPayment.pay");
     }
 
-    // Getters for verification in testing
     public String getCardNumber() {
         return cardNumber;
     }
